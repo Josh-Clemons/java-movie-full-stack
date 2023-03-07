@@ -1,5 +1,7 @@
-package dev.mrjoshc.movies;
+package dev.mrjoshc.movies.controllers;
 
+import dev.mrjoshc.movies.Movie;
+import dev.mrjoshc.movies.MovieService;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,7 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/vi/movies")
+@RequestMapping("/api/v1/movies")
 public class MovieController {
     @Autowired
     private MovieService movieService;
