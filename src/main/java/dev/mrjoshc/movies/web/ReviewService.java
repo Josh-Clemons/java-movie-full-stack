@@ -1,5 +1,8 @@
-package dev.mrjoshc.movies;
+package dev.mrjoshc.movies.web;
 
+import dev.mrjoshc.movies.repositories.ReviewRepository;
+import dev.mrjoshc.movies.models.Movie;
+import dev.mrjoshc.movies.models.Review;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -7,7 +10,6 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ReviewService {
